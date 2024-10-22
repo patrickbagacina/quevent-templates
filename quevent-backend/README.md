@@ -8,77 +8,77 @@ This document outlines the project structure for the **Quevent Backend** API, wh
 /quevent-backend
 │
 ├── /src
-│ ├── /main
-│ │ ├── /java
-│ │ │ └── /com
-│ │ │ └── quevent
-│ │ │ └── backend
-│ │ │ ├── /config
-│ │ │ │ ├── Auth0Config.java
-│ │ │ │ ├── DatabaseConfig.java
-│ │ │ │ ├── RedisConfig.java
-│ │ │ │ ├── SwaggerConfig.java
-│ │ │ │ └── ElasticsearchConfig.java
-│ │ │ │
-│ │ │ ├── /controller
-│ │ │ │ ├── ProductController.java
-│ │ │ │ ├── UserController.java
-│ │ │ │ └── OrderController.java
-│ │ │ │
-│ │ │ ├── /graphql
-│ │ │ │ ├── /resolver
-│ │ │ │ │ ├── ProductResolver.java
-│ │ │ │ │ ├── UserResolver.java
-│ │ │ │ │ └── OrderResolver.java
-│ │ │ │ └── GraphQLConfig.java
-│ │ │ │
-│ │ │ ├── /model
-│ │ │ │ ├── Product.java
-│ │ │ │ ├── User.java
-│ │ │ │ └── Order.java
-│ │ │ │
-│ │ │ ├── /repository
-│ │ │ │ ├── ProductRepository.java
-│ │ │ │ ├── UserRepository.java
-│ │ │ │ └── OrderRepository.java
-│ │ │ │
-│ │ │ ├── /service
-│ │ │ │ ├── ProductService.java
-│ │ │ │ ├── UserService.java
-│ │ │ │ └── OrderService.java
-│ │ │ │
-│ │ │ ├── /security
-│ │ │ │ ├── Auth0Service.java
-│ │ │ │ └── SecurityConfig.java
-│ │ │ │
-│ │ │ ├── /exception
-│ │ │ │ ├── CustomException.java
-│ │ │ │ └── GlobalExceptionHandler.java
-│ │ │ │
-│ │ │ └── QueventApplication.java
-│ │ │
-│ │ └── /resources
-│ │ ├── application.properties
-│ │ ├── logback.xml
-│ │ └── graphql.schema
-│ │
-│ └── /test
-│ ├── /java
-│ │ └── /com
-│ │ └── quevent
-│ │ └── backend
-│ │ ├── /unit
-│ │ │ ├── ProductServiceTest.java
-│ │ │ ├── UserServiceTest.java
-│ │ │ └── OrderServiceTest.java
-│ │ │
-│ │ └── /functional
-│ │ ├── ProductControllerTest.java
-│ │ ├── UserControllerTest.java
-│ │ └── OrderControllerTest.java
-│ │
-│ └── /resources
-│ └── application-test.properties
+│   ├── /main
+│   │   ├── /java
+│   │   │   └── /com
+│   │   │       └── quevent
+│   │   │           └── backend
+│   │   │               ├── /config
+│   │   │               │   ├── Auth0Config.java
+│   │   │               │   ├── DatabaseConfig.java
+│   │   │               │   ├── RedisConfig.java
+│   │   │               │   ├── SwaggerConfig.java
+│   │   │               │   └── ElasticsearchConfig.java
+│   │   │               │
+│   │   │               ├── /controller
+│   │   │               │   ├── ProductController.java
+│   │   │               │   ├── UserController.java
+│   │   │               │   └── OrderController.java
+│   │   │               │
+│   │   │               ├── /graphql
+│   │   │               │   ├── /resolver
+│   │   │               │   │   ├── ProductResolver.java
+│   │   │               │   │   ├── UserResolver.java
+│   │   │               │   │   └── OrderResolver.java
+│   │   │               │   └── GraphQLConfig.java
+│   │   │               │
+│   │   │               ├── /model
+│   │   │               │   ├── Product.java
+│   │   │               │   ├── User.java
+│   │   │               │   └── Order.java
+│   │   │               │
+│   │   │               ├── /repository
+│   │   │               │   ├── ProductRepository.java
+│   │   │               │   ├── UserRepository.java
+│   │   │               │   └── OrderRepository.java
+│   │   │               │
+│   │   │               ├── /service
+│   │   │               │   ├── ProductService.java
+│   │   │               │   ├── UserService.java
+│   │   │               │   └── OrderService.java
+│   │   │               │
+│   │   │               ├── /security
+│   │   │               │   ├── Auth0Service.java
+│   │   │               │   └── SecurityConfig.java
+│   │   │               │
+│   │   │               ├── /exception
+│   │   │               │   ├── CustomException.java
+│   │   │               │   └── GlobalExceptionHandler.java
+│   │   │               │
+│   │   │               └── QueventApplication.java
+│   │   │
+│   │   └── /resources
+│   │       ├── application.properties
+│   │       ├── logback.xml
+│   │       └── graphql.schema
+│   │
+│   └── /test
+│       ├── /java
+│       │   └── /com
+│       │       └── quevent
+│       │           └── backend
+│       │               ├── /unit
+│       │               │   ├── ProductServiceTest.java
+│       │               │   ├── UserServiceTest.java
+│       │               │   └── OrderServiceTest.java
+│       │               │
+│       │               └── /functional
+│       │                   ├── ProductControllerTest.java
+│       │                   ├── UserControllerTest.java
+│       │                   └── OrderControllerTest.java
+│       │
+│       └── /resources
+│           └── application-test.properties
 │
 ├── pom.xml (or build.gradle)
 └── README.md
